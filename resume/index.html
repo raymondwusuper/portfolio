@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Raymond Wu</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <a href="../">Home</a>
+        <a href="../projects/">Projects</a>
+        <a href="../contact/">Contact</a>
+        <a href="../resume/">Resume</a>
+        <a href="https://github.com/raymondwusuper" target="_blank">GitHub</a>
+    </nav>
+
+    <h1>Resume</h1>
+
+    <section>
+        <h2>Education</h2>
+        <article>
+            <header>
+                <h3>University of California San Diego</h3>
+                <p>Bachelor of Science in Data Science — GPA: 3.95/4.0</p>
+            </header>
+            <p>Relevant Coursework: Networking, Operating Systems and Concurrency, Design and Analysis of Algorithms, Theoretical Foundations for Data Science, UC Berkeley Data Structures, MIT Introduction to Algorithms</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <article>
+            <header>
+                <h3>Capital One — Systems Engineering Intern</h3>
+                <p>McLean, VA | <time datetime="2026-06">Jun 2026</time> – <time datetime="2026-08">Aug 2026</time></p>
+            </header>
+            <p>Incoming Summer 2026</p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Expedia Group — SDE Intern</h3>
+                <p>Seattle, WA | <time datetime="2025-06">Jun 2025</time> – <time datetime="2025-08">Aug 2025</time></p>
+            </header>
+            <ul>
+                <li>Designed and implemented a distributed observability system handling 10M+ events/day across 50+ microservices; reduced MTTR from 2hrs to 1hr through custom Micrometer metrics, K8s health monitoring, and automated Spinnaker deployment</li>
+                <li>Built a Python CLI and CI gate automating federal SOX compliance for 50k+ Datadog monitors with tagging, naming, and dashboards; reduced audit labor by 40+ hours per cycle</li>
+                <li>Modernized a legacy Spring Boot observability service from Java 11 to Java 21, resolving 100+ dependency breaks and improving startup by ~30%</li>
+            </ul>
+        </article>
+
+        <article>
+            <header>
+                <h3>LeetCode — Solution Author</h3>
+                <p>Remote | <time datetime="2024-12">Dec 2024</time> – Present</p>
+            </header>
+            <ul>
+                <li>Write official contest questions and editorials for 1M+ DAU, covering advanced topics like DP, graph theory, and constructive algorithms</li>
+                <li>Analyzed grader performance and user behavior to improve test case robustness and platform reliability</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <article>
+            <header>
+                <h3>High-Performance Matching Engine</h3>
+                <p>C++20, Concurrency</p>
+            </header>
+            <ul>
+                <li>Implemented a price-time priority book with O(log P) price-level lookup and O(1) in-level FIFO operations via iterator-based removal</li>
+                <li>Built a lock-free MPSC ring buffer (CAS on head, release/acquire ordering) feeding a dedicated matching thread; 3M+ msgs/sec in local benchmarks</li>
+                <li>Modularized orderbook/queue/engine loop and added a replay harness for latency/throughput profiling under multi-threaded load</li>
+            </ul>
+        </article>
+
+        <article>
+            <header>
+                <h3>Japanese OCR</h3>
+                <p>Python, Keras, MNIST</p>
+            </header>
+            <ul>
+                <li>Implemented a CNN with hand-coded backpropagation, achieving 0.95 F1 on Kuzushiji-MNIST, outperforming ResNet-18 (0.83 F1)</li>
+                <li>Derived full gradient and approx. Hessian update rule, achieving 3x faster convergence and 52% lower MSE vs. basic SGD</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Activities &amp; Awards</h2>
+        <ul>
+            <li>Competitive Programming: Codeforces International Master (2300+ rating), USACO Platinum</li>
+            <li>C++ Systems Benchmarks: Rank #1/100k+ users on getcracked.io</li>
+            <li>Competitive Math: 3x AIME Qualifier</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> C++, Python, C, Bash, Java, TypeScript, JavaScript, Postgres, SQL, MatLab</li>
+            <li><strong>Frameworks:</strong> Boost, POSIX, React, Node.js, MongoDB, StatsD, Micrometer, Flask, FastAPI, REST APIs, Keras, TensorFlow, Pandas, NumPy</li>
+            <li><strong>Tools:</strong> Git, Shell Scripting, Linux, Docker, Wireshark, Datadog, Kubernetes, Splunk, Spinnaker, Jira, Valgrind, GDB, perf, Firebase</li>
+            <li><strong>Concepts:</strong> Operating Systems, Concurrency, Lock-Free Programming, Multithreading, Memory Allocation, Networking Protocols, Network Programming, Computer Architecture</li>
+        </ul>
+    </section>
+</body>
+</html>
