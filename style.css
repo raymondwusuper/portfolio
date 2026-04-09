@@ -29,7 +29,7 @@ nav a {
 
 nav a.current {
   border-bottom: 0.4em solid oklch(80% 3% 200);
-  padding-bottom: 0.1em; 
+  padding-bottom: 0.1em;
 }
 
 nav a:hover {
@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+/* ---------- Contact form ---------- */
 form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -69,6 +70,7 @@ form button {
   grid-column: 1 / -1;
 }
 
+/* ---------- Projects grid ---------- */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -79,6 +81,7 @@ form button {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
+  gap: 0.5em;
 }
 
 .projects article h2 {
@@ -88,4 +91,95 @@ form button {
 .projects article img {
   max-width: 100%;
   height: auto;
+}
+
+/* ---------- Resume ---------- */
+.resume-header {
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+.resume-header h1 {
+  margin-bottom: 0.2em;
+}
+
+.resume-header p {
+  margin: 0.2em 0;
+  color: oklch(45% 2% 200);
+}
+
+section {
+  margin-block: 2em;
+}
+
+section > h2 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid oklch(80% 3% 200);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.entry-meta {
+  display: flex;
+  flex-direction: column;
+  color: oklch(45% 2% 200);
+  font-size: 0.9em;
+}
+
+.entry-meta time {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.entry-body h3 {
+  margin: 0 0 0.3em 0;
+  font-size: 1.1em;
+}
+
+.entry-body p {
+  margin: 0;
+}
+
+.achievements {
+  padding-left: 1.2em;
+}
+
+.achievements li {
+  margin-bottom: 0.4em;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 10em 1fr;
+  gap: 0.5em 1em;
+}
+
+.skills dt {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.skills dd {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .entry,
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .entry-meta {
+    flex-direction: row;
+    gap: 0.5em;
+  }
 }

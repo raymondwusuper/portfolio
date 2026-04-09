@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Raymond Wu</title>
+    <title>Resume — Raymond Wu</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -11,102 +11,135 @@
         <a href="/portfolio/">Home</a>
         <a href="/portfolio/projects/">Projects</a>
         <a href="/portfolio/contact/">Contact</a>
-        <a href="/portfolio/resume/">Resume</a>
-        <a href="https://github.com/raymondwusuper" target="_blank">GitHub</a>
+        <a class="current" href="/portfolio/resume/">Resume</a>
+        <a href="https://github.com/raymondwusuper" target="_blank" rel="noopener">GitHub</a>
     </nav>
 
-    <h1>Resume</h1>
+    <header class="resume-header">
+        <h1>Raymond Wu</h1>
+        <p>925-660-5416 &middot; <a href="mailto:raymond.wu.super@gmail.com">raymond.wu.super@gmail.com</a></p>
+        <p>
+            <a href="https://linkedin.com/in/raymond-wu-529379262" target="_blank" rel="noopener">LinkedIn</a> &middot;
+            <a href="https://github.com/raymondwusuper" target="_blank" rel="noopener">GitHub</a>
+        </p>
+    </header>
 
     <section>
         <h2>Education</h2>
-        <article>
-            <header>
-                <h3>University of California San Diego</h3>
-                <p>Bachelor of Science in Data Science — GPA: 3.95/4.0</p>
-            </header>
-            <p>Relevant Coursework: Networking, Operating Systems and Concurrency, Design and Analysis of Algorithms, Theoretical Foundations for Data Science, UC Berkeley Data Structures, MIT Introduction to Algorithms</p>
+        <article class="entry">
+            <div class="entry-meta">
+                <time>2022 &ndash; 2026</time>
+                <span>La Jolla, CA</span>
+            </div>
+            <div class="entry-body">
+                <h3>University of California, San Diego</h3>
+                <p>B.S. in Data Science &middot; GPA: 3.95/4.0</p>
+                <p><strong>Relevant coursework:</strong> Networking, Operating Systems and Concurrency, Design and Analysis of Algorithms, Theoretical Foundations for Data Science, UC Berkeley Data Structures, MIT Introduction to Algorithms.</p>
+            </div>
         </article>
     </section>
 
     <section>
         <h2>Experience</h2>
 
-        <article>
-            <header>
-                <h3>Capital One — Systems Engineering Intern</h3>
-                <p>McLean, VA | <time datetime="2026-06">Jun 2026</time> – <time datetime="2026-08">Aug 2026</time></p>
-            </header>
-            <p>Incoming Summer 2026</p>
+        <article class="entry">
+            <div class="entry-meta">
+                <time>Jun 2026 &ndash; Aug 2026</time>
+                <span>Capital One &middot; McLean, VA</span>
+            </div>
+            <div class="entry-body">
+                <h3>Systems Engineering Intern</h3>
+                <p>Incoming Summer 2026.</p>
+            </div>
         </article>
 
-        <article>
-            <header>
-                <h3>Expedia Group — SDE Intern</h3>
-                <p>Seattle, WA | <time datetime="2025-06">Jun 2025</time> – <time datetime="2025-08">Aug 2025</time></p>
-            </header>
-            <ul>
-                <li>Designed and implemented a distributed observability system handling 10M+ events/day across 50+ microservices; reduced MTTR from 2hrs to 1hr through custom Micrometer metrics, K8s health monitoring, and automated Spinnaker deployment</li>
-                <li>Built a Python CLI and CI gate automating federal SOX compliance for 50k+ Datadog monitors with tagging, naming, and dashboards; reduced audit labor by 40+ hours per cycle</li>
-                <li>Modernized a legacy Spring Boot observability service from Java 11 to Java 21, resolving 100+ dependency breaks and improving startup by ~30%</li>
-            </ul>
+        <article class="entry">
+            <div class="entry-meta">
+                <time>Jun 2025 &ndash; Aug 2025</time>
+                <span>Expedia Group &middot; Seattle, WA</span>
+            </div>
+            <div class="entry-body">
+                <h3>SDE Intern</h3>
+                <ul>
+                    <li>Designed and implemented a distributed observability system handling 10M+ events/day across 50+ microservices; reduced MTTR from 2hrs to 1hr through custom Micrometer metrics, K8s health monitoring, and automated Spinnaker deployment.</li>
+                    <li>Built a Python CLI and CI gate automating federal SOX compliance for 50k+ Datadog monitors with tagging, naming, and dashboards; reduced audit labor by 40+ hours per cycle.</li>
+                    <li>Modernized a legacy Spring Boot observability service from Java 11 to Java 21, resolving 100+ dependency breaks and improving startup by ~30%.</li>
+                </ul>
+            </div>
         </article>
 
-        <article>
-            <header>
-                <h3>LeetCode — Solution Author</h3>
-                <p>Remote | <time datetime="2024-12">Dec 2024</time> – Present</p>
-            </header>
-            <ul>
-                <li>Write official contest questions and editorials for 1M+ DAU, covering advanced topics like DP, graph theory, and constructive algorithms</li>
-                <li>Analyzed grader performance and user behavior to improve test case robustness and platform reliability</li>
-            </ul>
+        <article class="entry">
+            <div class="entry-meta">
+                <time>Dec 2024 &ndash; present</time>
+                <span>LeetCode &middot; Remote</span>
+            </div>
+            <div class="entry-body">
+                <h3>Editorial Author</h3>
+                <ul>
+                    <li>Write official contest questions and editorials for 1M+ DAU; cover advanced topics like DP, advanced graphs, and game theory, emphasizing runtime, memory efficiency, and optimization trade-offs.</li>
+                    <li>Analyzed grader performance and user behavior to improve test case robustness and platform reliability for millions of submissions.</li>
+                </ul>
+            </div>
         </article>
     </section>
 
     <section>
         <h2>Projects</h2>
 
-        <article>
-            <header>
+        <article class="entry">
+            <div class="entry-meta">
+                <time>2024</time>
+                <span>C++20, Concurrency</span>
+            </div>
+            <div class="entry-body">
                 <h3>High-Performance Matching Engine</h3>
-                <p>C++20, Concurrency</p>
-            </header>
-            <ul>
-                <li>Implemented a price-time priority book with O(log P) price-level lookup and O(1) in-level FIFO operations via iterator-based removal</li>
-                <li>Built a lock-free MPSC ring buffer (CAS on head, release/acquire ordering) feeding a dedicated matching thread; 3M+ msgs/sec in local benchmarks</li>
-                <li>Modularized orderbook/queue/engine loop and added a replay harness for latency/throughput profiling under multi-threaded load</li>
-            </ul>
+                <ul>
+                    <li>Implemented a price-time priority book with O(log P) price-level lookup and O(1) in-level FIFO operations via iterator-based removal; supports fast add/cancel/match across concurrent producers.</li>
+                    <li>Built a lock-free MPSC ring buffer (CAS on head, release/acquire ordering) feeding a dedicated matching thread; supports multi-producer workloads at 3M+ msgs/sec in local benchmarks.</li>
+                    <li>Modularized orderbook/queue/engine loop and added a replay harness for latency/throughput profiling under multi-threaded load.</li>
+                </ul>
+            </div>
         </article>
 
-        <article>
-            <header>
+        <article class="entry">
+            <div class="entry-meta">
+                <time>2024</time>
+                <span>Python, Keras, MNIST</span>
+            </div>
+            <div class="entry-body">
                 <h3>Japanese OCR</h3>
-                <p>Python, Keras, MNIST</p>
-            </header>
-            <ul>
-                <li>Implemented a CNN with hand-coded backpropagation, achieving 0.95 F1 on Kuzushiji-MNIST, outperforming ResNet-18 (0.83 F1)</li>
-                <li>Derived full gradient and approx. Hessian update rule, achieving 3x faster convergence and 52% lower MSE vs. basic SGD</li>
-            </ul>
+                <ul>
+                    <li>Implemented a CNN with hand-coded backpropagation, achieving 0.95 F1 on Kuzushiji-MNIST, outperforming ResNet-18 (0.83 F1) via optimized gradients and a custom loss function.</li>
+                    <li>Derived full gradient and approximate Hessian update rule, achieving 3&times; faster convergence and 52% lower MSE vs. basic SGD on a 1M-sample dataset.</li>
+                </ul>
+            </div>
         </article>
     </section>
 
     <section>
-        <h2>Activities &amp; Awards</h2>
-        <ul>
-            <li>Competitive Programming: Codeforces International Master (2300+ rating), USACO Platinum</li>
-            <li>C++ Systems Benchmarks: Rank #1/100k+ users on getcracked.io</li>
-            <li>Competitive Math: 3x AIME Qualifier</li>
+        <h2>Activities & Awards</h2>
+        <ul class="achievements">
+            <li><strong>Competitive Programming:</strong> Codeforces International Master (2300+ rating), USACO Platinum</li>
+            <li><strong>C++ Systems Benchmarks:</strong> Rank #1 / 100k+ users on getcracked.io (advanced C++ systems challenges)</li>
+            <li><strong>Competitive Math:</strong> 3&times; AIME Qualifier</li>
         </ul>
     </section>
 
     <section>
         <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> C++, Python, C, Bash, Java, TypeScript, JavaScript, Postgres, SQL, MatLab</li>
-            <li><strong>Frameworks:</strong> Boost, POSIX, React, Node.js, MongoDB, StatsD, Micrometer, Flask, FastAPI, REST APIs, Keras, TensorFlow, Pandas, NumPy</li>
-            <li><strong>Tools:</strong> Git, Shell Scripting, Linux, Docker, Wireshark, Datadog, Kubernetes, Splunk, Spinnaker, Jira, Valgrind, GDB, perf, Firebase</li>
-            <li><strong>Concepts:</strong> Operating Systems, Concurrency, Lock-Free Programming, Multithreading, Memory Allocation, Networking Protocols, Network Programming, Computer Architecture</li>
-        </ul>
+        <dl class="skills">
+            <dt>Languages</dt>
+            <dd>C++, Python, C, Bash, Java, TypeScript, JavaScript, Postgres, SQL, MATLAB</dd>
+
+            <dt>Frameworks</dt>
+            <dd>Boost, POSIX, React, Node.js, MongoDB, StatsD, Micrometer, Flask, FastAPI, REST APIs, Keras, TensorFlow, Pandas, NumPy</dd>
+
+            <dt>Tools</dt>
+            <dd>Git, Shell Scripting, Linux, Docker, Wireshark, Datadog, Kubernetes, Splunk, Spinnaker, Jira, Valgrind, GDB, perf, Firebase</dd>
+
+            <dt>Concepts</dt>
+            <dd>Operating Systems, Concurrency, Lock-Free Programming, Multithreading, Memory Allocation, Networking Protocols, Network Programming, Computer Architecture, Software Design, Data Structures and Algorithms</dd>
+        </dl>
     </section>
 </body>
 </html>
