@@ -17,23 +17,20 @@
 
     <h1>Contact</h1>
 
-    <form action="mailto:raymond.wu.super@gmail.com" method="POST" enctype="text/plain">
+    <form action="mailto:your@email.com" method="get">
+        <label>
+            Name
+            <input type="text" name="name" required>
+        </label>
         <label>
             Email
-            <input type="email" name="email" value="sender@example.com">
+            <input type="email" name="email" required>
         </label>
-
-        <label>
-            Subject
-            <input name="subject" value="Hello!">
-        </label>
-
         <label>
             Message
-            <textarea name="body">Hey, just reaching out!</textarea>
+            <textarea name="message" rows="6" required></textarea>
         </label>
-
-        <button>Send</button>
+        <button type="submit">Send</button>
     </form>
 </body>
 </html>
