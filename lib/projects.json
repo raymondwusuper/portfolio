@@ -1,0 +1,74 @@
+[
+  {
+    "title": "High-Performance Matching Engine",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "C++20 matching engine with a lock-free MPSC ring buffer achieving 3M+ msgs/sec. Price-time priority book with O(log P) lookup and O(1) in-level FIFO operations."
+  },
+  {
+    "title": "Japanese OCR",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "CNN with hand-coded backpropagation achieving 0.95 F1 on Kuzushiji-MNIST, outperforming ResNet-18. Custom Hessian update rule for 3x faster convergence."
+  },
+  {
+    "title": "WhiteBox Platform",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Co-founded whitebox.ac, a technical interview prep platform with implementation-heavy systems problems, domain knowledge quizzes, and gacha cosmetics."
+  },
+  {
+    "title": "Distributed Observability System",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built at Expedia Group: handled 10M+ events/day across 50+ microservices, reduced MTTR from 2hrs to 1hr with custom Micrometer metrics and K8s monitoring."
+  },
+  {
+    "title": "SOX Compliance Automation",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Python CLI and CI gate automating federal SOX compliance for 50k+ Datadog monitors. Reduced audit labor by 40+ hours per cycle."
+  },
+  {
+    "title": "LeetCode Editorial Authoring",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Writing official contest questions and editorials for 1M+ DAU covering DP, advanced graphs, and game theory."
+  },
+  {
+    "title": "Portfolio Website",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Personal portfolio built with HTML, CSS Grid, Flexbox, subgrid, and vanilla JS. Features dark mode, auto-nav generation, and localStorage persistence."
+  },
+  {
+    "title": "Heart Disease Prediction",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Group ML project using Bayesian Networks and HMMs for heart disease prediction. Built with Python and scikit-learn."
+  },
+  {
+    "title": "osu! Automation Tools",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Python automation tools for osu! relax mod and autopilot using Quartz on macOS for input simulation."
+  },
+  {
+    "title": "Spring Boot Modernization",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Modernized legacy Spring Boot observability service from Java 11 to Java 21 at Expedia, resolving 100+ dependency breaks and improving startup by ~30%."
+  },
+  {
+    "title": "Data Visualization Project",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "DSC 106 data visualization project exploring interactive charting with D3.js and SVG."
+  },
+  {
+    "title": "Roblox Game Prototype",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Roblox development with Luau scripting, Rojo toolchain, procedural terrain generation, and weapon tool systems."
+  }
+]
