@@ -1,7 +1,7 @@
 [
   {
     "title": "High-Performance Matching Engine",
-    "year": 2024,
+    "year": 2025,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "C++20 matching engine with a lock-free MPSC ring buffer achieving 3M+ msgs/sec. Price-time priority book with O(log P) lookup and O(1) in-level FIFO operations."
   },
@@ -13,7 +13,7 @@
   },
   {
     "title": "WhiteBox Platform",
-    "year": 2025,
+    "year": 2026,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Co-founded whitebox.ac, a technical interview prep platform with implementation-heavy systems problems, domain knowledge quizzes, and gacha cosmetics."
   },
@@ -30,8 +30,8 @@
     "description": "Python CLI and CI gate automating federal SOX compliance for 50k+ Datadog monitors. Reduced audit labor by 40+ hours per cycle."
   },
   {
-    "title": "LeetCode Editorial Authoring",
-    "year": 2025,
+    "title": "LeetCode Problem/Editorial Authoring",
+    "year": 2024,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Writing official contest questions and editorials for 1M+ DAU covering DP, advanced graphs, and game theory."
   },
@@ -43,13 +43,13 @@
   },
   {
     "title": "Heart Disease Prediction",
-    "year": 2025,
+    "year": 2026,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Group ML project using Bayesian Networks and HMMs for heart disease prediction. Built with Python and scikit-learn."
   },
   {
     "title": "osu! Automation Tools",
-    "year": 2025,
+    "year": 2026,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Python automation tools for osu! relax mod and autopilot using Quartz on macOS for input simulation."
   },
